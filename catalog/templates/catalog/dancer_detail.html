@@ -1,0 +1,10 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Title: {{ dancer.first_name}} {{dancer.last_name}}</h1>
+
+  <p><strong>Name:</strong> <a href="">{{ dancer.first_name }}</a></p> <!-- author detail link not yet defined -->
+  <p><strong>Surname:</strong> <a href="">{{ dancer.last_name }}</a></p> <!-- author detail link not yet defined -->
+  <p><strong>DOB:</strong> <a href="">{{ dancer.date_of_birth }}</a></p> <!-- author detail link not yet defined -->
+
+{% endblock %}

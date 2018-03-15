@@ -1,0 +1,11 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Title: {{ coach.first_name}} {{coach.last_name}}</h1>
+
+  <p><strong>Name:</strong> <a href="">{{ coach.first_name }}</a></p> <!-- author detail link not yet defined -->
+  <p><strong>Surname:</strong> <a href="">{{ coach.last_name }}</a></p> <!-- author detail link not yet defined -->
+  <p><strong>DOB:</strong> <a href="">{{ coach.date_of_birth }}</a></p> <!-- author detail link not yet defined -->
+  <p><strong>Awards:</strong> <a href="">{{ coach.awards }}</a></p> <!-- author detail link not yet defined -->
+
+{% endblock %}

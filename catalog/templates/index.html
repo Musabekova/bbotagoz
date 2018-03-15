@@ -1,0 +1,18 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h1>Dance Dance</h1>
+
+  <p>Welcome to <em>Dance Dance<em>, the best dance hall in the world!</p>
+
+<h2>Groups</h2>
+
+  <p>The Dance page has the following people:</p>
+  <ul>
+    <li><strong>Dancers:</strong> {{ num_dancers }}</li>
+    <li><strong>Coaches:</strong> {{ num_coaches }}</li>
+    <li><strong>Visits:</strong> {{ num_visits }}</li>
+	
+  </ul>
+
+{% endblock %}

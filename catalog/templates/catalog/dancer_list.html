@@ -1,0 +1,19 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>Dancer List</h1>
+
+    {% if dancer_list %}
+    <ul>
+
+      {% for dancer in dancer_list %}
+      <li>
+        <a href="{{dancer.get_absolute_url}}">{{ dancer.first_name}} {{dancer.last_name}} </a>
+      </li>
+      {% endfor %}
+
+    </ul>
+    {% else %}
+      <p>There are no dancers</p>
+    {% endif %}       
+{% endblock %}
